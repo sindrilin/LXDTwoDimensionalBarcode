@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFE702111BCC9DB40044F735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702101BCC9DB40044F735 /* main.m */; };
+		EFE702141BCC9DB40044F735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702131BCC9DB40044F735 /* AppDelegate.m */; };
+		EFE702171BCC9DB40044F735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702161BCC9DB40044F735 /* ViewController.m */; };
+		EFE7021A1BCC9DB40044F735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE702181BCC9DB40044F735 /* Main.storyboard */; };
+		EFE7021C1BCC9DB40044F735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE7021B1BCC9DB40044F735 /* Assets.xcassets */; };
+		EFE7021F1BCC9DB40044F735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE7021D1BCC9DB40044F735 /* LaunchScreen.storyboard */; };
+		EFE7022A1BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702291BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.m */; };
+		EFE702351BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702341BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFE702261BCC9DB40044F735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE702041BCC9DB40044F735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE7020B1BCC9DB40044F735;
+			remoteInfo = LXDTwoDimensionalBarcode;
+		};
+		EFE702311BCC9DB40044F735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE702041BCC9DB40044F735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFE7020B1BCC9DB40044F735;
+			remoteInfo = LXDTwoDimensionalBarcode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFE7020C1BCC9DB40044F735 /* LXDTwoDimensionalBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXDTwoDimensionalBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE702101BCC9DB40044F735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EFE702121BCC9DB40044F735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFE702131BCC9DB40044F735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFE702151BCC9DB40044F735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFE702161BCC9DB40044F735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFE702191BCC9DB40044F735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFE7021B1BCC9DB40044F735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFE7021E1BCC9DB40044F735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFE702201BCC9DB40044F735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE702251BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXDTwoDimensionalBarcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE702291BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXDTwoDimensionalBarcodeTests.m; sourceTree = "<group>"; };
+		EFE7022B1BCC9DB40044F735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE702301BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXDTwoDimensionalBarcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFE702341BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXDTwoDimensionalBarcodeUITests.m; sourceTree = "<group>"; };
+		EFE702361BCC9DB40044F735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFE702091BCC9DB40044F735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE702221BCC9DB40044F735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE7022D1BCC9DB40044F735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFE702031BCC9DB40044F735 = {
+			isa = PBXGroup;
+			children = (
+				EFE7020E1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */,
+				EFE702281BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests */,
+				EFE702331BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests */,
+				EFE7020D1BCC9DB40044F735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFE7020D1BCC9DB40044F735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE7020C1BCC9DB40044F735 /* LXDTwoDimensionalBarcode.app */,
+				EFE702251BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.xctest */,
+				EFE702301BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFE7020E1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */ = {
+			isa = PBXGroup;
+			children = (
+				EFE702121BCC9DB40044F735 /* AppDelegate.h */,
+				EFE702131BCC9DB40044F735 /* AppDelegate.m */,
+				EFE702151BCC9DB40044F735 /* ViewController.h */,
+				EFE702161BCC9DB40044F735 /* ViewController.m */,
+				EFE702181BCC9DB40044F735 /* Main.storyboard */,
+				EFE7021B1BCC9DB40044F735 /* Assets.xcassets */,
+				EFE7021D1BCC9DB40044F735 /* LaunchScreen.storyboard */,
+				EFE702201BCC9DB40044F735 /* Info.plist */,
+				EFE7020F1BCC9DB40044F735 /* Supporting Files */,
+			);
+			path = LXDTwoDimensionalBarcode;
+			sourceTree = "<group>";
+		};
+		EFE7020F1BCC9DB40044F735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFE702101BCC9DB40044F735 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFE702281BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFE702291BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.m */,
+				EFE7022B1BCC9DB40044F735 /* Info.plist */,
+			);
+			path = LXDTwoDimensionalBarcodeTests;
+			sourceTree = "<group>";
+		};
+		EFE702331BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFE702341BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.m */,
+				EFE702361BCC9DB40044F735 /* Info.plist */,
+			);
+			path = LXDTwoDimensionalBarcodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFE7020B1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE702391BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcode" */;
+			buildPhases = (
+				EFE702081BCC9DB40044F735 /* Sources */,
+				EFE702091BCC9DB40044F735 /* Frameworks */,
+				EFE7020A1BCC9DB40044F735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXDTwoDimensionalBarcode;
+			productName = LXDTwoDimensionalBarcode;
+			productReference = EFE7020C1BCC9DB40044F735 /* LXDTwoDimensionalBarcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFE702241BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE7023C1BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcodeTests" */;
+			buildPhases = (
+				EFE702211BCC9DB40044F735 /* Sources */,
+				EFE702221BCC9DB40044F735 /* Frameworks */,
+				EFE702231BCC9DB40044F735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFE702271BCC9DB40044F735 /* PBXTargetDependency */,
+			);
+			name = LXDTwoDimensionalBarcodeTests;
+			productName = LXDTwoDimensionalBarcodeTests;
+			productReference = EFE702251BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFE7022F1BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFE7023F1BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcodeUITests" */;
+			buildPhases = (
+				EFE7022C1BCC9DB40044F735 /* Sources */,
+				EFE7022D1BCC9DB40044F735 /* Frameworks */,
+				EFE7022E1BCC9DB40044F735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFE702321BCC9DB40044F735 /* PBXTargetDependency */,
+			);
+			name = LXDTwoDimensionalBarcodeUITests;
+			productName = LXDTwoDimensionalBarcodeUITests;
+			productReference = EFE702301BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFE702041BCC9DB40044F735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = cnpayany;
+				TargetAttributes = {
+					EFE7020B1BCC9DB40044F735 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					EFE702241BCC9DB40044F735 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = EFE7020B1BCC9DB40044F735;
+					};
+					EFE7022F1BCC9DB40044F735 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = EFE7020B1BCC9DB40044F735;
+					};
+				};
+			};
+			buildConfigurationList = EFE702071BCC9DB40044F735 /* Build configuration list for PBXProject "LXDTwoDimensionalBarcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFE702031BCC9DB40044F735;
+			productRefGroup = EFE7020D1BCC9DB40044F735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFE7020B1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */,
+				EFE702241BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests */,
+				EFE7022F1BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFE7020A1BCC9DB40044F735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE7021F1BCC9DB40044F735 /* LaunchScreen.storyboard in Resources */,
+				EFE7021C1BCC9DB40044F735 /* Assets.xcassets in Resources */,
+				EFE7021A1BCC9DB40044F735 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE702231BCC9DB40044F735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE7022E1BCC9DB40044F735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFE702081BCC9DB40044F735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE702171BCC9DB40044F735 /* ViewController.m in Sources */,
+				EFE702141BCC9DB40044F735 /* AppDelegate.m in Sources */,
+				EFE702111BCC9DB40044F735 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE702211BCC9DB40044F735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE7022A1BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE7022C1BCC9DB40044F735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFE702351BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFE702271BCC9DB40044F735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFE7020B1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */;
+			targetProxy = EFE702261BCC9DB40044F735 /* PBXContainerItemProxy */;
+		};
+		EFE702321BCC9DB40044F735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFE7020B1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */;
+			targetProxy = EFE702311BCC9DB40044F735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFE702181BCC9DB40044F735 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFE702191BCC9DB40044F735 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFE7021D1BCC9DB40044F735 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFE7021E1BCC9DB40044F735 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFE702371BCC9DB40044F735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFE702381BCC9DB40044F735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFE7023A1BCC9DB40044F735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LXDTwoDimensionalBarcode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFE7023B1BCC9DB40044F735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LXDTwoDimensionalBarcode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EFE7023D1BCC9DB40044F735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LXDTwoDimensionalBarcodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXDTwoDimensionalBarcode.app/LXDTwoDimensionalBarcode";
+			};
+			name = Debug;
+		};
+		EFE7023E1BCC9DB40044F735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LXDTwoDimensionalBarcodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXDTwoDimensionalBarcode.app/LXDTwoDimensionalBarcode";
+			};
+			name = Release;
+		};
+		EFE702401BCC9DB40044F735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LXDTwoDimensionalBarcodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LXDTwoDimensionalBarcode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EFE702411BCC9DB40044F735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LXDTwoDimensionalBarcodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LXDTwoDimensionalBarcode;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFE702071BCC9DB40044F735 /* Build configuration list for PBXProject "LXDTwoDimensionalBarcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE702371BCC9DB40044F735 /* Debug */,
+				EFE702381BCC9DB40044F735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFE702391BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE7023A1BCC9DB40044F735 /* Debug */,
+				EFE7023B1BCC9DB40044F735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFE7023C1BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE7023D1BCC9DB40044F735 /* Debug */,
+				EFE7023E1BCC9DB40044F735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EFE7023F1BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE702401BCC9DB40044F735 /* Debug */,
+				EFE702411BCC9DB40044F735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFE702041BCC9DB40044F735 /* Project object */;
+}
