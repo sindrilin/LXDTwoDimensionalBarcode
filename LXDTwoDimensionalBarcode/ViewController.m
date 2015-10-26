@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+LXDCreateBarcode.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - event
+- (IBAction)createBarcode:(id)sender
+{
+    UIImage * image = [UIImage imageOfQRFromURL: @"https://www.baidu.com" codeSize: 160 red: 0 green: 0 blue: 0 insertImage: [UIImage imageNamed: @"picture"] roundRadius: 15.0f];
+    CGSize size = image.size;
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:  ((CGRect){(CGPointZero), (size)})];
+    imageView.center = self.view.center;
+    imageView.image = image;
+    [self.view addSubview: imageView];
 }
 
 @end

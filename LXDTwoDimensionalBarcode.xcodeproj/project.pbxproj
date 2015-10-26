@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5C10191BCE467600952D03 /* picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5C10131BCE467600952D03 /* picture@2x.png */; settings = {ASSET_TAGS = (); }; };
+		EF5C101A1BCE467600952D03 /* UIImage+LXDCreateBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5C10151BCE467600952D03 /* UIImage+LXDCreateBarcode.m */; settings = {ASSET_TAGS = (); }; };
+		EF5C101B1BCE467600952D03 /* UIImage+RoundRectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5C10171BCE467600952D03 /* UIImage+RoundRectImage.m */; settings = {ASSET_TAGS = (); }; };
+		EF5C101C1BCE467600952D03 /* whiteBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5C10181BCE467600952D03 /* whiteBG@2x.png */; settings = {ASSET_TAGS = (); }; };
+		EFE4A45F1BDE092400362FAA /* LXDScanCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4A45C1BDE092400362FAA /* LXDScanCodeController.m */; settings = {ASSET_TAGS = (); }; };
+		EFE4A4601BDE092400362FAA /* LXDScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4A45E1BDE092400362FAA /* LXDScanView.m */; settings = {ASSET_TAGS = (); }; };
 		EFE702111BCC9DB40044F735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702101BCC9DB40044F735 /* main.m */; };
 		EFE702141BCC9DB40044F735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702131BCC9DB40044F735 /* AppDelegate.m */; };
 		EFE702171BCC9DB40044F735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702161BCC9DB40044F735 /* ViewController.m */; };
@@ -35,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF5C10131BCE467600952D03 /* picture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picture@2x.png"; sourceTree = "<group>"; };
+		EF5C10141BCE467600952D03 /* UIImage+LXDCreateBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LXDCreateBarcode.h"; sourceTree = "<group>"; };
+		EF5C10151BCE467600952D03 /* UIImage+LXDCreateBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LXDCreateBarcode.m"; sourceTree = "<group>"; };
+		EF5C10161BCE467600952D03 /* UIImage+RoundRectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundRectImage.h"; sourceTree = "<group>"; };
+		EF5C10171BCE467600952D03 /* UIImage+RoundRectImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundRectImage.m"; sourceTree = "<group>"; };
+		EF5C10181BCE467600952D03 /* whiteBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteBG@2x.png"; sourceTree = "<group>"; };
+		EFE4A45B1BDE092400362FAA /* LXDScanCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanCodeController.h; sourceTree = "<group>"; };
+		EFE4A45C1BDE092400362FAA /* LXDScanCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanCodeController.m; sourceTree = "<group>"; };
+		EFE4A45D1BDE092400362FAA /* LXDScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanView.h; sourceTree = "<group>"; };
+		EFE4A45E1BDE092400362FAA /* LXDScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanView.m; sourceTree = "<group>"; };
 		EFE7020C1BCC9DB40044F735 /* LXDTwoDimensionalBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXDTwoDimensionalBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE702101BCC9DB40044F735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFE702121BCC9DB40044F735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,9 +94,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF5C10121BCE467600952D03 /* LXDTwoZDismensionCode */ = {
+			isa = PBXGroup;
+			children = (
+				EF5C10181BCE467600952D03 /* whiteBG@2x.png */,
+				EF5C10131BCE467600952D03 /* picture@2x.png */,
+				EF5C10141BCE467600952D03 /* UIImage+LXDCreateBarcode.h */,
+				EF5C10151BCE467600952D03 /* UIImage+LXDCreateBarcode.m */,
+				EF5C10161BCE467600952D03 /* UIImage+RoundRectImage.h */,
+				EF5C10171BCE467600952D03 /* UIImage+RoundRectImage.m */,
+			);
+			path = LXDTwoZDismensionCode;
+			sourceTree = "<group>";
+		};
+		EFE4A45A1BDE092400362FAA /* LXDScanCodeController */ = {
+			isa = PBXGroup;
+			children = (
+				EFE4A45B1BDE092400362FAA /* LXDScanCodeController.h */,
+				EFE4A45C1BDE092400362FAA /* LXDScanCodeController.m */,
+				EFE4A45D1BDE092400362FAA /* LXDScanView.h */,
+				EFE4A45E1BDE092400362FAA /* LXDScanView.m */,
+			);
+			path = LXDScanCodeController;
+			sourceTree = "<group>";
+		};
 		EFE702031BCC9DB40044F735 = {
 			isa = PBXGroup;
 			children = (
+				EFE4A45A1BDE092400362FAA /* LXDScanCodeController */,
+				EF5C10121BCE467600952D03 /* LXDTwoZDismensionCode */,
 				EFE7020E1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */,
 				EFE702281BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests */,
 				EFE702331BCC9DB40044F735 /* LXDTwoDimensionalBarcodeUITests */,
@@ -243,9 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5C101C1BCE467600952D03 /* whiteBG@2x.png in Resources */,
 				EFE7021F1BCC9DB40044F735 /* LaunchScreen.storyboard in Resources */,
 				EFE7021C1BCC9DB40044F735 /* Assets.xcassets in Resources */,
 				EFE7021A1BCC9DB40044F735 /* Main.storyboard in Resources */,
+				EF5C10191BCE467600952D03 /* picture@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE4A45F1BDE092400362FAA /* LXDScanCodeController.m in Sources */,
 				EFE702171BCC9DB40044F735 /* ViewController.m in Sources */,
+				EF5C101A1BCE467600952D03 /* UIImage+LXDCreateBarcode.m in Sources */,
+				EFE4A4601BDE092400362FAA /* LXDScanView.m in Sources */,
 				EFE702141BCC9DB40044F735 /* AppDelegate.m in Sources */,
 				EFE702111BCC9DB40044F735 /* main.m in Sources */,
+				EF5C101B1BCE467600952D03 /* UIImage+RoundRectImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXDTwoDimensionalBarcode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LXDTwoDimensionalBarcode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cnpayany.com.LXDTwoDimensionalBarcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +546,7 @@
 				EFE7023B1BCC9DB40044F735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFE7023C1BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcodeTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +555,7 @@
 				EFE7023E1BCC9DB40044F735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFE7023F1BCC9DB40044F735 /* Build configuration list for PBXNativeTarget "LXDTwoDimensionalBarcodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +564,7 @@
 				EFE702411BCC9DB40044F735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
