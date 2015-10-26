@@ -42,9 +42,9 @@
  */
 + (UIImage *)imageOfQRFromURL: (NSString *)networkAddress
                      codeSize: (CGFloat)codeSize
-                          red: (CGFloat)red
-                        green: (CGFloat)green
-                         blue: (CGFloat)blue
+                          red: (NSUInteger)red
+                        green: (NSUInteger)green
+                         blue: (NSUInteger)blue
 {
     return [self imageOfQRFromURL: networkAddress codeSize: codeSize red: red green: green blue: blue insertImage: nil roundRadius: 0.f];
 }
@@ -57,9 +57,9 @@
  */
 + (UIImage *)imageOfQRFromURL: (NSString *)networkAddress
                      codeSize: (CGFloat)codeSize
-                          red: (CGFloat)red
-                        green: (CGFloat)green
-                         blue: (CGFloat)blue
+                          red: (NSUInteger)red
+                        green: (NSUInteger)green
+                         blue: (NSUInteger)blue
                   insertImage: (UIImage *)insertImage
 {
     return [self imageOfQRFromURL: networkAddress codeSize: codeSize red: red green: green blue: blue insertImage: insertImage roundRadius: 0.f];
@@ -73,23 +73,22 @@
  */
 + (UIImage *)imageOfQRFromURL: (NSString *)networkAddress
                      codeSize: (CGFloat)codeSize
-                          red: (CGFloat)red
-                        green: (CGFloat)green
-                         blue: (CGFloat)blue
+                          red: (NSUInteger)red
+                        green: (NSUInteger)green
+                         blue: (NSUInteger)blue
                   insertImage: (UIImage *)insertImage
                   roundRadius: (CGFloat)roundRadius
 {
-    if (!networkAddress) { return nil; }
+    if (!networkAddress || (NSNull *)networkAddress == [NSNull null]) { return nil; }
     /** 颜色不可以太接近白色*/
-    NSAssert((red > 225 && green > 225 && blue > 225), @"The color of QR code is two close to white color than it will diffculty to scan");
-    
-    codeSize = MAX(160, codeSize);
-    codeSize = MIN(CGRectGetWidth([UIScreen mainScreen].bounds) - 80, codeSize);
+    NSUInteger rgb = (red << 16) + (green << 8) + blue;
+    NSAssert((rgb & 0xffffff00) <= 0xd0d0d000, @"The color of QR code is two close to white color than it will diffculty to scan");
+    codeSize = [self validateCodeSize: codeSize];
     
     CIImage * originImage = [self createQRFromAddress: networkAddress];
-    UIImage * progressImage = [self createNonInterpolatedImageFromCIImage: originImage size: codeSize];       //到了这里二维码已经可以进行扫描了
+    UIImage * progressImage = [self excludeFuzzyImageFromCIImage: originImage size: codeSize];       //到了这里二维码已经可以进行扫描了
     
-    UIImage * effectiveImage = [self imageFillBlackColorToTransparent: progressImage red: red green: green blue: blue];  //进行颜色渲染后的二维码
+    UIImage * effectiveImage = [self imageFillBlackColorAndTransparent: progressImage red: red green: green blue: blue];  //进行颜色渲染后的二维码
     
     return [self imageInsertedImage: effectiveImage insertImage: insertImage radius: roundRadius];
 }
@@ -104,6 +103,16 @@
  */
 void ProviderReleaseData(void * info, const void * data, size_t size) {
     free((void *)data);
+}
+
+/**
+ *  控制二维码尺寸在合适的范围内
+ */
++ (CGFloat)validateCodeSize: (CGFloat)codeSize
+{
+    codeSize = MAX(160, codeSize);
+    codeSize = MIN(CGRectGetWidth([UIScreen mainScreen].bounds) - 80, codeSize);
+    return codeSize;
 }
 
 /*!
@@ -129,7 +138,7 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
  * @abstract
  * 对生成的原始二维码进行加工，返回大小适合的黑白二维码图。因此还需要进行颜色填充
  */
-+ (UIImage *)createNonInterpolatedImageFromCIImage: (CIImage *)image size: (CGFloat)size
++ (UIImage *)excludeFuzzyImageFromCIImage: (CIImage *)image size: (CGFloat)size
 {
     CGRect extent = CGRectIntegral(image.extent);
     CGFloat scale = MIN(size / CGRectGetWidth(extent), size / CGRectGetHeight(extent));
@@ -159,7 +168,7 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
  * @abstract
  * 对加工过的黑白二维码进行颜色填充，并转换成透明背景
  */
-+ (UIImage *)imageFillBlackColorToTransparent: (UIImage *)image red: (CGFloat)red green: (CGFloat)green blue: (CGFloat)blue
++ (UIImage *)imageFillBlackColorAndTransparent: (UIImage *)image red: (NSUInteger)red green: (NSUInteger)green blue: (NSUInteger)blue
 {
     const int imageWidth = image.size.width;
     const int imageHeight = image.size.height;
@@ -191,7 +200,7 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
  * @abstract
  * 遍历所有像素点，将白色区域填充为透明色
  */
-+ (void)fillWhiteToTransparentOnPixel: (uint32_t *)rgbImageBuf pixelNum: (int)pixelNum red: (CGFloat)red green: (CGFloat)green blue: (CGFloat)blue
++ (void)fillWhiteToTransparentOnPixel: (uint32_t *)rgbImageBuf pixelNum: (int)pixelNum red: (NSUInteger)red green: (NSUInteger)green blue: (NSUInteger)blue
 {
     uint32_t * pCurPtr = rgbImageBuf;
     for (int i = 0; i < pixelNum; i++, pCurPtr++) {

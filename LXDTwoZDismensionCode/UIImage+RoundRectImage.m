@@ -51,7 +51,7 @@ void addRoundRectToPath(CGContextRef context, CGRect rect, float radius, CGImage
  */
 + (UIImage *)imageOfRoundRectWithImage: (UIImage *)image size: (CGSize)size radius: (CGFloat)radius
 {
-    if (!image) { return nil; }
+    if (!image || (NSNull *)image == [NSNull null]) { return nil; }
     
     const CGFloat width = size.width;
     const CGFloat height = size.height;

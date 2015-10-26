@@ -71,19 +71,19 @@
  *  Default is 160, it will be 160 if the param is less than default value.
  *
  *  @param red
- *  The param decide red color space on the two-dimension code.
+ * The param decide red color space on the two-dimension code.
  *
  *  @param green
- *  The param decide green color space on the two-dimension code.
+ * The param decide green color space on the two-dimension code.
  *
  *  @param blue
- *  The param decide blue color space on the two-dimension code.
+ * The param decide blue color space on the two-dimension code.
  */
 + (UIImage *)imageOfQRFromURL: (NSString *)networkAddress
                      codeSize: (CGFloat)codeSize
-                          red: (CGFloat)red
-                        green: (CGFloat)green
-                         blue: (CGFloat)blue;
+                          red: (NSUInteger)red
+                        green: (NSUInteger)green
+                         blue: (NSUInteger)blue;
 
 
 /*!
@@ -108,24 +108,24 @@
  *  Default is 160, it will be 160 if the param is less than default value.
  *
  *  @param red
- *  The param decide red color space on the two-dimension code.
+ * The param decide red color space on the two-dimension code.
  *
  *  @param green
- *  The param decide green color space on the two-dimension code.
+ * The param decide green color space on the two-dimension code.
  *
  *  @param blue
- *  The param decide blue color space on the two-dimension code.
+ * The param decide blue color space on the two-dimension code.
  *
  *  @param  insertImage
- *  The target image will insert into the two-dimension code and show in the center.
- *  The image's size will be 1/4 of the two-dimension code's size.
+ * The target image will insert into the two-dimension code and show in the center.
+ * The image's size will be 1/4 of the two-dimension code's size.
  *  Provide a more clearly image will get better effective.
  */
 + (UIImage *)imageOfQRFromURL: (NSString *)networkAddress
                      codeSize: (CGFloat)codeSize
-                          red: (CGFloat)red
-                        green: (CGFloat)green
-                         blue: (CGFloat)blue
+                          red: (NSUInteger)red
+                        green: (NSUInteger)green
+                         blue: (NSUInteger)blue
                   insertImage: (UIImage *)insertImage;
 
 /*!
@@ -151,18 +151,18 @@
  *  Default is 160, it will be 160 if the param is less than default value.
  *
  *  @param red
- *  The param decide red color space on the two-dimension code.
+ * The param decide red color space on the two-dimension code.
  *
  *  @param green
- *  The param decide green color space on the two-dimension code.
+ * The param decide green color space on the two-dimension code.
  *
  *  @param blue
- *  The param decide blue color space on the two-dimension code.
+ * The param decide blue color space on the two-dimension code.
  *
  *  @param  insertImage
- *  The target image will insert into the two-dimension code and show in the center.
- *  The image's size will be 1/4 of the two-dimension code's size.
- *  Provide a more clearly image will get better effective.
+ * The target image will insert into the two-dimension code and show in the center.
+ * The image's size will be 1/4 of the two-dimension code's size.
+ * Provide a more clearly image will get better effective.
  *
  *  @param roundRadius
  * Offer a CGFloat-type value to device radius on round rect.
@@ -170,10 +170,33 @@
  */
 + (UIImage *)imageOfQRFromURL: (NSString *)networkAddress
                      codeSize: (CGFloat)codeSize
-                          red: (CGFloat)red
-                        green: (CGFloat)green
-                         blue: (CGFloat)blue
+                          red: (NSUInteger)red
+                        green: (NSUInteger)green
+                         blue: (NSUInteger)blue
                   insertImage: (UIImage *)insertImage
                   roundRadius: (CGFloat)roundRadius;
+
+/*!
+ * @function imageOfRoundRectWithImage: size: radius:
+ *
+ * @abstract
+ * To tailor corner radius for image. 
+ * This method will also decompress image if the param size bigger the size of image
+ *
+ * @discussion
+ * To tailor corner radius for image., however return nil if image param is nil
+ *
+ * @param image
+ * The target will be made a corner radius. Nil return-value if this is nil
+ * The method will make a corner radius path on its bitmap context to impletation.
+ *
+ *  @param size
+ * The param decide the output image's size.
+ * Decompress the input image if the param bigger than size of input image.
+ *
+ *  @param radius
+ * The param decide value of corner radius in image.
+ */
++ (UIImage *)imageOfRoundRectWithImage: (UIImage *)image size: (CGSize)size radius: (CGFloat)radius;
 
 @end

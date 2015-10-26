@@ -11,8 +11,6 @@
 		EF5C101A1BCE467600952D03 /* UIImage+LXDCreateBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5C10151BCE467600952D03 /* UIImage+LXDCreateBarcode.m */; settings = {ASSET_TAGS = (); }; };
 		EF5C101B1BCE467600952D03 /* UIImage+RoundRectImage.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5C10171BCE467600952D03 /* UIImage+RoundRectImage.m */; settings = {ASSET_TAGS = (); }; };
 		EF5C101C1BCE467600952D03 /* whiteBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5C10181BCE467600952D03 /* whiteBG@2x.png */; settings = {ASSET_TAGS = (); }; };
-		EFE4A45F1BDE092400362FAA /* LXDScanCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4A45C1BDE092400362FAA /* LXDScanCodeController.m */; settings = {ASSET_TAGS = (); }; };
-		EFE4A4601BDE092400362FAA /* LXDScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE4A45E1BDE092400362FAA /* LXDScanView.m */; settings = {ASSET_TAGS = (); }; };
 		EFE702111BCC9DB40044F735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702101BCC9DB40044F735 /* main.m */; };
 		EFE702141BCC9DB40044F735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702131BCC9DB40044F735 /* AppDelegate.m */; };
 		EFE702171BCC9DB40044F735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE702161BCC9DB40044F735 /* ViewController.m */; };
@@ -47,10 +45,6 @@
 		EF5C10161BCE467600952D03 /* UIImage+RoundRectImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundRectImage.h"; sourceTree = "<group>"; };
 		EF5C10171BCE467600952D03 /* UIImage+RoundRectImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundRectImage.m"; sourceTree = "<group>"; };
 		EF5C10181BCE467600952D03 /* whiteBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteBG@2x.png"; sourceTree = "<group>"; };
-		EFE4A45B1BDE092400362FAA /* LXDScanCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanCodeController.h; sourceTree = "<group>"; };
-		EFE4A45C1BDE092400362FAA /* LXDScanCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanCodeController.m; sourceTree = "<group>"; };
-		EFE4A45D1BDE092400362FAA /* LXDScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanView.h; sourceTree = "<group>"; };
-		EFE4A45E1BDE092400362FAA /* LXDScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanView.m; sourceTree = "<group>"; };
 		EFE7020C1BCC9DB40044F735 /* LXDTwoDimensionalBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXDTwoDimensionalBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE702101BCC9DB40044F735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFE702121BCC9DB40044F735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,21 +101,9 @@
 			path = LXDTwoZDismensionCode;
 			sourceTree = "<group>";
 		};
-		EFE4A45A1BDE092400362FAA /* LXDScanCodeController */ = {
-			isa = PBXGroup;
-			children = (
-				EFE4A45B1BDE092400362FAA /* LXDScanCodeController.h */,
-				EFE4A45C1BDE092400362FAA /* LXDScanCodeController.m */,
-				EFE4A45D1BDE092400362FAA /* LXDScanView.h */,
-				EFE4A45E1BDE092400362FAA /* LXDScanView.m */,
-			);
-			path = LXDScanCodeController;
-			sourceTree = "<group>";
-		};
 		EFE702031BCC9DB40044F735 = {
 			isa = PBXGroup;
 			children = (
-				EFE4A45A1BDE092400362FAA /* LXDScanCodeController */,
 				EF5C10121BCE467600952D03 /* LXDTwoZDismensionCode */,
 				EFE7020E1BCC9DB40044F735 /* LXDTwoDimensionalBarcode */,
 				EFE702281BCC9DB40044F735 /* LXDTwoDimensionalBarcodeTests */,
@@ -314,10 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE4A45F1BDE092400362FAA /* LXDScanCodeController.m in Sources */,
 				EFE702171BCC9DB40044F735 /* ViewController.m in Sources */,
 				EF5C101A1BCE467600952D03 /* UIImage+LXDCreateBarcode.m in Sources */,
-				EFE4A4601BDE092400362FAA /* LXDScanView.m in Sources */,
 				EFE702141BCC9DB40044F735 /* AppDelegate.m in Sources */,
 				EFE702111BCC9DB40044F735 /* main.m in Sources */,
 				EF5C101B1BCE467600952D03 /* UIImage+RoundRectImage.m in Sources */,
