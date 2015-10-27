@@ -6,3 +6,5 @@ UIImage * qrCode = [UIImage imageOfQRFromURL: @"https://www.baidu.com" codeSize:
 UIImageView * imageView = [[UIImageView alloc] initWithImage: qrCode];<br>
 imageView.center = self.view.center;<br>
 [self.view addSubview: imageView];<br>
+
+[我的博客][http://www.jianshu.com/users/0cf7d455eb9e/latest_articles]
