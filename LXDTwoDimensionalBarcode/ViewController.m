@@ -26,7 +26,7 @@
 #pragma mark - event
 - (IBAction)createBarcode:(id)sender
 {
-    UIImage * image = [UIImage imageOfQRFromURL: @"https://www.baidu.com" codeSize: 160 red: 0 green: 0 blue: 0 insertImage: [UIImage imageNamed: @"picture"] roundRadius: 15.0f];
+    UIImage * image = [UIImage imageOfQRFromURL: @"https://appsto.re/cn/Jd2W-.i " codeSize: 1000 red: 0 green: 0 blue: 0 insertImage: [UIImage imageNamed: @"applicationIcon"] roundRadius: 15.0f];
     CGSize size = image.size;
     UIImageView * imageView = [[UIImageView alloc] initWithFrame:  ((CGRect){(CGPointZero), (size)})];
     imageView.center = self.view.center;

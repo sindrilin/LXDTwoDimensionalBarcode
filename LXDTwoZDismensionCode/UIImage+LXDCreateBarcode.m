@@ -232,7 +232,7 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
     whiteBG = [UIImage imageOfRoundRectWithImage: whiteBG size: whiteBG.size radius: radius];
     
     //白色边缘宽度
-    const CGFloat whiteSize = 2.f;
+    const CGFloat whiteSize = 5.f;
     CGSize brinkSize = CGSizeMake(originImage.size.width / 4, originImage.size.height / 4);
     CGFloat brinkX = (originImage.size.width - brinkSize.width) * 0.5;
     CGFloat brinkY = (originImage.size.height - brinkSize.height) * 0.5;
